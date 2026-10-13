@@ -1,0 +1,79 @@
+body {
+    background-color: skyblue;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    height: 100vh
+}
+
+.road {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(40, 40, 40);
+    position: absolute;
+    bottom: 0px;
+    z-index: 1
+}
+
+.road .dashed {
+    width: 100%;
+    position: relative;
+    border: 10px dashed white;
+    top: 90px
+}
+
+.car {
+    background-color: red;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    /* bottom: 200px; */
+    border-radius: 20px;
+    top: 450px;
+    z-index: 2;
+    /* transform: rotate(100deg); */
+    /* transform: translateY(400px); */
+    animation: move 5s linear infinite;
+}
+.car .wheel {
+    background-color: black;
+    width: 50px;    
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    animation: move-wheel 1s linear infinite;
+    border-top: 1px solid white
+}
+
+#wheel1 {
+    left: 20px;
+    bottom: -25px;
+}
+#wheel2 {
+    right: 20px;
+    bottom: -25px;
+}
+
+@keyframes move {
+    0% {
+        left: -300px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes move-wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+

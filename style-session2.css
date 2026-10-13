@@ -1,0 +1,89 @@
+/* li:nth-child(3)
+li:nth-child(odd)
+li:nth-child(even) */
+
+button {
+    font-family: Vazirmatn;
+    background: blue;
+    padding: 14px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none
+}
+button:hover {
+    background: rgb(126, 126, 213);
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0 0 10px 5px rgb(126, 126, 213);
+}
+
+button:active {
+    background: rgb(153, 8, 8);
+    color: black;
+    transition: 0.5s;
+}
+
+input {
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+
+/* ul li:first-child {
+    color: red !important;
+}
+
+ul li:last-child {
+    color: blue !important;
+} */
+
+ul li:nth-child(3) {
+    color: green !important;
+}
+
+/* span::after {
+    content: "\f015";
+    color: red;
+    font-family: "Font Awesome 5 Free";
+} */
+
+div {
+    /* position: fixed; */
+    position: relative;
+    background: blue;
+    width: 400px;
+    height: 400px;
+
+    /* position: absolute; */
+}
+div::before {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    content: "";
+    border-radius: 100%;
+    /* top;
+    left;
+    bottom;
+    right */
+    top: -20px;
+    right: -20px
+}
+div::after {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    content: "";
+    border-radius: 100%;
+    /* top;
+    left;
+    bottom;
+    right */
+    bottom: -20px;
+    right: -20px
+}

@@ -1,0 +1,109 @@
+/*
+!important
+#id
+.class
+htmlTag
+
+parent child
+
+parent .child
+.parent child
+.parent .child
+
+parent #child
+#parent child
+#parent #child
+
+20px
+20%
+20rem
+
+hex = #000
+color name = yellow
+hsl = hsl(0, 100%, 50%)
+rgb = rgb(255, 0, 0)
+CMYK = cmyk(100%, 0%, 0%, 0%)
+
+*/
+@font-face {
+    font-family: "yekan";
+    font-display: swap;
+    font-weight: 300;
+    src:
+        url("/yekan/yekan-regular.woff") format("woff"),
+        url("/yekan/yekan-regular.ttf") format("ttf"),
+        url("/yekan/yekan-regular.eot") format("ie")
+}
+@font-face {
+    font-family: "yekan";
+    font-display: swap;
+    font-weight: 400;
+    src:
+        url("/yekan/yekan.woff") format("woff"),
+        url("/yekan/yekan.ttf") format("ttf"),
+        url("/yekan/yekan.eot") format("ie")
+}
+
+
+
+
+body {
+    direction: rtl;
+    font-family: Vazirmatn
+}
+
+header {
+    background: yellow;
+    /*
+    background: linear-gradient(to right, red, yellow); 
+    background-image: url("myimage.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    */
+    width: 100%;
+    max-width: 1200px;
+    min-width: 300px;
+    height: 500px;
+    max-height: 200px;
+    min-height: 100px;
+
+    /* border: 5px solid red; */
+
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+
+    /*
+    border-bottom;
+    border-left;
+    border-top;
+    */
+
+    padding: 20px 10px 0 0;
+
+    outline: 5px solid red;
+
+    margin: 20px 0px 0px 20px;
+
+    text-align: justify;
+
+    text-decoration: underline;
+    /* text-transform: uppercase */
+    /* text-indent: ; */
+    /* text-wrap: ; */
+    /* text-shadow: ;  */
+
+}
+
+#article1 {
+    text-indent: 30px;
+    text-wrap: wrap;
+    letter-spacing: 4px;
+    word-spacing: 20px;
+    line-height: 1.25cm;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic
+}
+
+
