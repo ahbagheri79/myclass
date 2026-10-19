@@ -28,8 +28,6 @@ function login() {
     } else {
         alert("نام کاربری یا رمز عبور اشتباه است");
     }
-
-
 }
 
 function openMenu(){
